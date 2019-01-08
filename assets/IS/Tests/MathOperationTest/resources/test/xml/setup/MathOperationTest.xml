@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <webMethodsTestSuite description="" name="MathOperationTest">
     <webMethodsTestCase name="AddIntSuccess">
+        <mock enabled="false" folder="MathOperation.svc" name="add">
+            <pipeline filename="resources/test/xml/data/AddIntSuccessOutputMock.xml"/>
+        </mock>
         <service folder="MathOperation.svc" name="add">
             <input>
                 <file filename="resources/test/xml/data/AddIntSuccessInput.xml"/>
